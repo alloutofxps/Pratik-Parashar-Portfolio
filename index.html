@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pratik Parashar | Precision Accounting</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              olive: {
+                DEFAULT: '#2F3624', // Dark Olive Charcoal (Headlines)
+                light: '#4A5240',
+              },
+              pista: {
+                DEFAULT: '#C2C395', // Pista Sage (Backgrounds/Accents)
+                light: '#D4D5B3',
+                dim: '#B1B285',
+              },
+              cream: {
+                DEFAULT: '#FDFCF7', // Warm Cream (Base Bg)
+                dark: '#F2F0E6',
+              },
+              forest: {
+                DEFAULT: '#242B24', // Deep Forest Sage (Dark Mode Base)
+                light: '#2E362E',   // Slightly lighter for cards in dark mode
+                dark: '#1B211B',    // Darker sections
+                text: '#C2C395',    // Pista for text in dark mode
+              },
+              // Pastel colors for icons
+              pastel: {
+                coral: '#FFDAC1',
+                sky: '#C1E1FF',
+                lavender: '#E1C1FF',
+                mint: '#C1FFD7',
+                rose: '#FFC1CC',
+                amber: '#FFEAC1',
+              }
+            },
+            fontFamily: {
+              serif: ['"Bodoni Moda"', 'serif'],
+              sans: ['Inter', 'sans-serif'],
+            },
+            boxShadow: {
+              'soft': '0 10px 40px -10px rgba(0,0,0,0.05)',
+            }
+          },
+        },
+      }
+    </script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+      /* Custom scrollbar for a premium feel */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #242B24;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #C2C395;
+        border-radius: 4px;
+      }
+      html {
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+        height: 100vh;
+        overflow-y: scroll;
+      }
+      .text-balance {
+        text-wrap: balance;
+      }
+      .snap-section {
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-cream text-olive dark:bg-forest dark:text-cream transition-colors duration-500">
+    <div id="root"></div>
+  </body>
+</html>
