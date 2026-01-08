@@ -69,7 +69,13 @@ const Hero: React.FC = () => {
                 </div>
                 
                 <div className="space-y-4">
-                    <div className="h-32 bg-cream dark:bg-forest-dark w-full rounded-sm"></div>
+                    <div className="h-full w-full overflow-hidden rounded-sm">
+                      <img 
+                        src="/pratik.jpg" 
+                        alt="Pratik Parashar" 
+                        className="w-full h-full object-cover" 
+                      />
+                    </div>
                     <div className="flex justify-between items-end">
                         <div className="text-[10px] text-olive tracking-widest">2026</div>
                         <div className="w-8 h-8 rounded-full bg-pista/30 flex items-center justify-center text-olive">
